@@ -68,7 +68,7 @@ a.cta, button.cta{
 	width: 340px; 
 	position: absolute;
 	top: 110px;
-	right: 80px;
+	right: 50px;
 }
 
 @media only screen and (max-width: 780px) {
@@ -85,22 +85,65 @@ a.cta, button.cta{
 	}
 }
 
+nav{
+	height: 100px;
+	background-color: rgba(0,0,0, .5);
+	position: sticky; top: 0;
+	padding-left: 20px;
+	z-index: 10;
+}
+
+nav .logo{
+	display: flex;
+	width: 300px;
+	height: 40px;
+	position: absolute; top:33%;
+	margin-top: -20px;
+	text-decoration: none;
+	font-size: 50px;
+	font-weight: 800;
+	color: white;
+	margin-left: 50px;
+
+}
+
+nav ul{
+	
+	padding: 0;
+	margin: 0;
+	padding: 33px 55px;
+	align-items: center;
+	left: 0px;
+}
+
+nav ul li{
+	padding: 0;
+	margin: 0;
+	display: block;
+	float: right;
+	align-items: center;
+}
+
+nav ul li a{
+	display: block;
+	height: 100%;
+	box-sizing: border-box;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding:0 15px;
+	color: white;
+	font-weight: bold;
+}
 
 
-
-/*	
-<img src="cartoon.png" height="auto" width="300px" alt="Cartoon" class="cartoon">
-
-
-<div class="hero-banner">
-		<div class="wrapper">
-			<h1>Sublime Project One</h1>
-			<h3>All you ever need to know about coding <br/>
-				in one place without the effort of actually<br/>
-				lerning anything important.</h3>
-			<a class="cta" href="#get-started">Jump to: About Us</a>
-		</div>
-		<img src="cartoon.png" width="300px" alt="Cartoon" class="cartoon">
-	</div>
-
-	*/
+/* 
+<nav>
+		<a href="#" class="logo" >LOGO</a>
+		<ul>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>	
+		</ul>
+	</nav>
+*/
