@@ -24,7 +24,7 @@ body{
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
-}
+}*/
 
 h1{
 	font-weight: 800;
@@ -141,6 +141,7 @@ nav ul li a{
 
 .services{
 	width: 100%;
+	height: auto;
 	align-items: center;
 
 
@@ -154,7 +155,7 @@ nav ul li a{
 	display: grid;
 	
 	grid-template-columns: repeat( auto-fit, minmax(250px, 251px));
-	grid-template-rows: repeat(auto-fill, 300px);
+	
 	grid-gap: 40px;
 	justify-content: center;
 }
@@ -198,7 +199,7 @@ nav ul li a{
 		
 		grid-template-columns: repeat( auto-fit, minmax(250px, 251px));
 		grid-template-rows: repeat(auto-fill, 300px);
-		grid-gap: 20px;
+		grid-gap: calc(10px + 10%);
 		justify-content: center;
 	}
 }
@@ -213,7 +214,7 @@ nav ul li a{
 		
 		grid-template-columns: repeat( auto-fit, minmax(250px, 251fr));
 		grid-template-rows: repeat(auto-fill, 300px);
-		grid-gap: 20px;
+		grid-gap: calc(10px + 10%);
 		justify-content: center;
 	}
 }
