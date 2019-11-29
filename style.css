@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
 
 body{
-	background-color: silver;
+	background-color: white;
 	font-family: 'Open Sans', sans-serif;
 	padding: 0;
 	margin: 0;
@@ -136,14 +136,63 @@ nav ul li a{
 	font-weight: bold;
 }
 
+.services{
+	width: 100%;
+	align-items: center;
+}
+
+.services .service-row{
+	width: 960px
+	margin: auto;
+	height: auto;
+	padding: 50px 10px;
+	display: grid;
+	grid-auto-columns: 3fr;
+	grid-template-columns: repeat(auto-fill, 300px);
+	grid-template-rows: repeat(auto-fill, 300px);
+	grid-gap: 30px;
+	justify-content: center;
+}
+
+.services .service-row .col{
+	box-sizing: border-box;
+	height: 300px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.services .service-row .col-1{
+
+}
+
+.services .service-row .col-2{
+	
+}
+
+.services .service-row .col-3{
+	
+}
+
+.services .more{
+
+}
 
 /* 
-<nav>
-		<a href="#" class="logo" >LOGO</a>
-		<ul>
-			<li><a href="#">Services</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Contact</a></li>	
-		</ul>
-	</nav>
+	<div class="services">
+		<div class="service-row">
+			<div class="col-1 col">
+				<h3>Deep</h3>
+				<a href="#" class="more">more +</a>
+			</div>
+			<div class="col-2 col">
+				<h3>Carpets</h3>
+				<a href="#" class="more">more +</a>
+			</div>
+			<div class="col-3 col">
+				<h3>Weekly</h3>
+				<a href="#" class="more">more +</a>
+			</div>
+		</div>
+		
+	</div>
 */
