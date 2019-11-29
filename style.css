@@ -1,3 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
+
 body{
-	background-color: yellow;
+	background-color: silver;
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	margin: 0;
 }
+
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+	padding: 100px 50px;
+
+}
+
+.hero-banner{
+	background-color: #cc3333;
+	height: 80vh;
+	padding: 50px 20px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+
+h1{
+	font-weight: 800;
+	font-size: 50px;
+
+}
+
+h2{
+
+}
+
+h3{
+	font-size: 20px;
+	font-weight: bold;
+}
+.hero-banner h3{
+	color: white;
+	margin: 0;
+}
+.hero-banner h1{
+	color: white;
+	margin: 0px 0 20px;
+	padding-top: 20px;
+}
+
+h4{
+
+}
+
+a.cta, button.cta{
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	background: #cc3333;
+	display: inline-block;
+	padding: 10px 15px;
+	text-decoration: none;
+	border-radius: 10px;
+	margin: 20px 0;
+	box-shadow: 1px 3px 7px rgba(0, 0, 0, .5);
+}
+
+.cartoon{
+	width: 340px; 
+	position: absolute;
+	top: 110px;
+	right: 80px;
+}
+
+@media only screen and (max-width: 780px) {
+
+
+	.wrapper{
+		z-index: 2;
+	}
+}
+
+@media only screen and (max-width: 689px) {
+	.cartoon{
+		display: none;
+	}
+}
+
+
+
+
+/*	
+<img src="cartoon.png" height="auto" width="300px" alt="Cartoon" class="cartoon">
+
+
+<div class="hero-banner">
+		<div class="wrapper">
+			<h1>Sublime Project One</h1>
+			<h3>All you ever need to know about coding <br/>
+				in one place without the effort of actually<br/>
+				lerning anything important.</h3>
+			<a class="cta" href="#get-started">Jump to: About Us</a>
+		</div>
+		<img src="cartoon.png" width="300px" alt="Cartoon" class="cartoon">
+	</div>
+
+	*/
