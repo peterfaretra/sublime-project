@@ -189,7 +189,7 @@ nav ul li a{
 	text-shadow: 1px 3px 5px #000;
 }
 
-@media only screen and (max-width: 1120px){
+/*@media only screen and (max-width: 1120px){
 	.services .service-row{
 	
 		margin: 0 auto;
@@ -213,11 +213,11 @@ nav ul li a{
 		display: grid;
 		
 		grid-template-columns: repeat( auto-fit, minmax(250px, 251fr));
-		grid-template-rows: repeat(auto-fill, 300px);
+		grid-template-rows: repeat(auto-fit, minmax(300px 1fr));
 		grid-gap: calc(10px + 10%);
 		justify-content: center;
 	}
-}
+}*/
 
 .services .service-row .col-1{
 	background-image: url("col1.jpg");
@@ -241,24 +241,85 @@ nav ul li a{
 
 }
 
+.about-us{
+
+}
+
+.about-text{
+	height: auto;
+
+}
+
+.some-list{
+	width: 470px;
+	padding: 20px 20px 0 20px;
+	box-sizing: border-box;background-color: silver;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.about-text h3{
+	font-size: 30px;
+	width:960px;
+	margin: 0 auto;
+	padding: 10px;
+
+}
+.about-text p{
+	font-size: 20px;
+}
+
+.floating{
+	overflow-wrap: break-word;
+}
+.about-text .wrapper{
+	height: auto;
+	width: auto;
+}
+
+
+.some-list li{
+	height: 70px;
+	border-radius: 10px;
+	font-size: 40px;
+	color: white;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 20px;
+	padding-right: 6px 20px;
+	box-sizing: border-box;
+}
+
+.some-list li.blue{background-color: blue;}
+.some-list li.grey{background-color: grey;}
+.some-list li.yellow{background-color: yellow; color: #000}
+.some-list li.green{background-color: green;}
+.some-list li.purple{background-color: purple;}
+.some-list li.orange{background-color: orange;}
+
+.about-image{
+	float: right;
+	transform: translateY(30%);
+	margin: 10px;
+}
 
 /*   */
 /* 
-	<div class="services">
-		<div class="service-row">
-			<div class="col-1 col">
-				<h3>Deep</h3>
-				<a href="#" class="more">more +</a>
-			</div>
-			<div class="col-2 col">
-				<h3>Carpets</h3>
-				<a href="#" class="more">more +</a>
-			</div>
-			<div class="col-3 col">
-				<h3>Weekly</h3>
-				<a href="#" class="more">more +</a>
-			</div>
+	<div class="about-us" id="get-started">
+		<div class="about-text">
+			<ul class="some-list">
+				<li class="blue">this littrally does nothing</li>
+				<li class="grey">&nbsp;</li>
+				<li class="yellow dragging">something written</li>
+				<li class="green">not important </li>
+				<li class="purple">this is just an example</li>
+				<li class="orange">to see how to do it</li>
+			</ul>
+			<h3>About Us</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi recusandae deleniti officiis, necessitatibus. Ad nulla dolore molestias provident fugit quam excepturi, facilis, saepe nam. Culpa aliquid temporibus quas quaerat iste mollitia a, adipisci neque. Quidem libero non temporibus consectetur sit ipsum, reprehenderit vitae. Nostrum dignissimos ad eos praesentium ipsam ratione laudantium recusandae minima!</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, unde debitis quasi dolorum distinctio eius voluptates ea aut exercitationem incidunt, sequi excepturi quibusdam, perferendis ex doloremque minus reprehenderit odio quod.</p>
+			<p>Repudiandae repellat, nam cumque rem quas enim suscipit sit sapiente. Quasi ipsa placeat, saepe, animi eum suscipit modi doloribus molestias quis voluptatem, neque pariatur alias commodi. Ad debitis ipsam, laboriosam.</p>
+			<p>Deleniti nostrum soluta tenetur alias, laudantium cum aspernatur suscipit minus ipsa. Sunt excepturi voluptatem, dicta nobis incidunt, vero necessitatibus blanditiis. Id harum incidunt libero dolores asperiores culpa earum praesentium impedit.</p>
 		</div>
-		
+		<img src="author.jpeg" width="400px" alt="author" class="about-image">
 	</div>
 */
