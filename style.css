@@ -246,7 +246,10 @@ nav ul li a{
 }
 
 .about-text{
+	max-width: 1160px;
 	height: auto;
+	margin: 0 auto;
+	box-sizing: border-box;
 
 }
 
@@ -256,6 +259,7 @@ nav ul li a{
 	box-sizing: border-box;background-color: silver;
 	float: left;
 	margin: 0 20px 20px 0;
+	box-sizing: border-box;
 }
 
 .about-text h3{
@@ -263,14 +267,19 @@ nav ul li a{
 	width:960px;
 	margin: 0 auto;
 	padding: 10px;
+	box-sizing: border-box;
+	text-align: justify;
+	overflow-wrap: break-word;
 
 }
 .about-text p{
 	font-size: 20px;
+	text-align: justify;
+	overflow-wrap: break-word;
 }
 
 .floating{
-	overflow-wrap: break-word;
+	
 }
 .about-text .wrapper{
 	height: auto;
@@ -292,7 +301,10 @@ nav ul li a{
 
 .some-list li.blue{background-color: blue;}
 .some-list li.grey{background-color: grey;}
-.some-list li.yellow{background-color: yellow; color: #000}
+.some-list li.yellow{
+	background-color: yellow; 
+	color: #000;
+}
 .some-list li.green{background-color: green;}
 .some-list li.purple{background-color: purple;}
 .some-list li.orange{background-color: orange;}
@@ -300,26 +312,52 @@ nav ul li a{
 .about-image{
 	float: right;
 	transform: translateY(30%);
-	margin: 10px;
+	margin: 20px;
+	transform: translateX(1em);
 }
+
+.fb{
+	grid-area: box-1;
+	background-color: #3b5998;
+	padding-right: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.insta{
+	grid-area: box-2;
+	background-color: #C13584;
+	padding-right: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+.footer-row{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "box-1 box-2";
+	height: 200px;
+}
+
+
+
+
+
+
 
 /*   */
 /* 
-	<div class="about-us" id="get-started">
-		<div class="about-text">
-			<ul class="some-list">
-				<li class="blue">this littrally does nothing</li>
-				<li class="grey">&nbsp;</li>
-				<li class="yellow dragging">something written</li>
-				<li class="green">not important </li>
-				<li class="purple">this is just an example</li>
-				<li class="orange">to see how to do it</li>
-			</ul>
-			<h3>About Us</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi recusandae deleniti officiis, necessitatibus. Ad nulla dolore molestias provident fugit quam excepturi, facilis, saepe nam. Culpa aliquid temporibus quas quaerat iste mollitia a, adipisci neque. Quidem libero non temporibus consectetur sit ipsum, reprehenderit vitae. Nostrum dignissimos ad eos praesentium ipsam ratione laudantium recusandae minima!</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, unde debitis quasi dolorum distinctio eius voluptates ea aut exercitationem incidunt, sequi excepturi quibusdam, perferendis ex doloremque minus reprehenderit odio quod.</p>
-			<p>Repudiandae repellat, nam cumque rem quas enim suscipit sit sapiente. Quasi ipsa placeat, saepe, animi eum suscipit modi doloribus molestias quis voluptatem, neque pariatur alias commodi. Ad debitis ipsam, laboriosam.</p>
-			<p>Deleniti nostrum soluta tenetur alias, laudantium cum aspernatur suscipit minus ipsa. Sunt excepturi voluptatem, dicta nobis incidunt, vero necessitatibus blanditiis. Id harum incidunt libero dolores asperiores culpa earum praesentium impedit.</p>
+		<div class="footer-row">
+			<div class="fb">
+				<img src="facebook.png" alt="Facebook Icon" class="facebook-icon">
+			</div>
+			<div class="insta">
+				<img src="instagram.png" alt="Instagram Icon" class="instagram-icon">
+			</div>
 		</div>
-		<img src="author.jpeg" width="400px" alt="author" class="about-image">
-	</div>
 */
