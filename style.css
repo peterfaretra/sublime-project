@@ -263,6 +263,8 @@ nav ul li a{
 	float: left;
 	margin: 0 20px 20px 0;
 	box-sizing: border-box;
+	position: relative;
+
 }
 
 .about-text h3{
@@ -290,6 +292,8 @@ nav ul li a{
 }
 
 
+
+
 .some-list li{
 	height: 70px;
 	border-radius: 10px;
@@ -302,15 +306,40 @@ nav ul li a{
 	box-sizing: border-box;
 }
 
+li{
+	padding: 5px 14px;
+}
+
 .some-list li.blue{background-color: blue;}
 .some-list li.grey{background-color: grey;}
 .some-list li.yellow{
 	background-color: yellow; 
 	color: #000;
+	position: absolute;
+	top: 100px;
+	left: 70px;
+	right: -9px;
+	transform: rotate(6deg);
+	box-shadow: 0 2px 14px rgba(0,0,0,.3);
 }
 .some-list li.green{background-color: green;}
 .some-list li.purple{background-color: purple;}
 .some-list li.orange{background-color: orange;}
+
+/*.some-list li.yellow:after{
+	content: 'h';
+	padding-top: 1em;
+	text-align: center;
+	font-size: 16px;
+	display: block;
+	position: absolute;
+	margin: 0 auto;
+	height: 50px;
+	width: 54px;
+	background: white;
+	bottom: -30px;
+	left: 60%;
+}*/
 
 .about-image{
 	float: right;
@@ -347,20 +376,45 @@ nav ul li a{
 	height: 200px;
 }
 
+.testimonial{
+	width: 60%;
+	margin: 0 auto;
+	height: auto;
+	background: lightgrey;
+	box-shadow: 0 3 14 rgba(0,0,0,.3);
+	border-radius: 10px;
+	text-align: center;
+	padding: 30px;
+}
 
+p.test{
+	font-size: 20px;
+}
 
+.contact{
+	
+	margin: 0 auto;
+	height: 150px;
+	width: 167px;
+	padding: 5px;
+	
+}
 
+.contact .cta{
+	align-content: center;
+	
 
+}
+
+.popup{
+	display: none;
+}
 
 
 /*   */
 /* 
-		<div class="footer-row">
-			<div class="fb">
-				<img src="facebook.png" alt="Facebook Icon" class="facebook-icon">
-			</div>
-			<div class="insta">
-				<img src="instagram.png" alt="Instagram Icon" class="instagram-icon">
-			</div>
-		</div>
+			<div class="testimonial">
+		<h4 class="test-name">Someone's Name</h4>
+		<p class="test">Culpa aliquid temporibus quas quaerat iste mollitia a, adipisci neque.</p>
+	</div>
 */
