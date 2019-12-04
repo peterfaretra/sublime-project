@@ -52,7 +52,7 @@
 					<li class="yellow dragging">written</li>
 					<li class="green">not important </li>
 					<li class="purple">an example</li>
-					<li class="orange">to see</li>
+					<li class="orange">fuck off</li>
 				</ul>
 				<div class="floating">
 					<img src="author.jpeg" width="400px" alt="author" class="about-image">
@@ -70,7 +70,7 @@
 		<p class="test">"Culpa aliquid temporibus quas quaerat iste mollitia a, adipisci neque. Quasi ipsa placeat, saepe, animi eum suscipit modi doloribus molestias quis voluptatem, neque pariatur alias commodi. Ad debitis ipsam, laboriosam"</p>
 	</div>
 	<div class="contact">
-		<button class="cta">Contact Now!</button>
+		<button class="cta" onclick="ShowPopup();">Contact Now!</button>
 	</div>
 		<div class="footer-row">
 			<div class="fb">
@@ -80,31 +80,38 @@
 				<img src="instagram.png" alt="Instagram Icon" class="instagram-icon">
 			</div>
 		</div>
-	<div class="popup">
+	<div class="popup" id="popup">
 		<div class="blanket"></div>
 		<div class="content">
 			<h2>Fill in your details</h2>
 			<form action="">
-				<div class="item">
-					<label>Your First Name</label>
-					<input type="text" placeholder="First Name" value="Big" >
+				<div class="row">
+					<div class="one">
+						<label>Your First Name</label>
+						<input type="text" placeholder="First Name" value="Big">
+					</div>
+					<div class="two">
+						<label>Your Last Name</label>
+						<input type="text" placeholder="Last Name" value="Hairy">
+					</div>
+				
+				
+					<div class="three">
+						<label>Your First Dog's Name</label>
+						<input type="text" placeholder="Name" value="Cunt" >
+					 </div>
+					<div class="four">
+						<label>Your Only Friend's Name</label>
+						<input type="text" placeholder="Name" value="Flaps" >
+					</div>
 				</div>
-				<div class="item">
-					<label>Your Last Name</label>
-					<input type="text" placeholder="Last Name" value="Hairy" >
-				</div>
-				<div class="item">
-					<label>Your First Dog's Name</label>
-					<input type="text" placeholder="Name" value="Cunt" >
-				</div>
-				<div class="item">
-					<label>Your Only Friend's Name</label>
-					<input type="text" placeholder="Name" value="Flaps" >
-				</div>
-				<button class="cta-in">I Want In!</button>
+				<button class="cta-in cta">I Want In!</button>
 			</form>
-			<button class="close">Close</button>
+			<button class="close" onclick="HidePopup();"></button>
 		</div>
 	</div>
+
+<script src="script.js" type="text/javascript"></script>
+
 </body>
 </html>
